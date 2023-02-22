@@ -1,4 +1,4 @@
-// Array of prayer times in 24-hour format
+// Array of prayer times in a 24-hour format
 const prayerTimes = [  ['Fajr', '05:30'],
   ['Dhuhr', '12:30'],
   ['Asr', '15:30'],
@@ -6,7 +6,7 @@ const prayerTimes = [  ['Fajr', '05:30'],
   ['Isha', '20:00'],
 ];
 
-// Get current time in 24-hour format
+// Getting current time in 24-hour format
 function getCurrentTime() {
   const now = new Date();
   const hours = now.getHours().toString().padStart(2, '0');
@@ -14,7 +14,7 @@ function getCurrentTime() {
   return `${hours}:${minutes}`;
 }
 
-// Get time remaining for the next prayer
+// Getting time remaining for the next prayer
 function getTimeRemaining() {
   const currentTime = getCurrentTime();
   let nextPrayerTime;
